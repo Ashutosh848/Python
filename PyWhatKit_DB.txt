@@ -1,0 +1,20 @@
+Date: 20/8/2024
+Time: 18:58
+Phone Number: +917357898333
+Message: Hello Python!
+--------------------
+Date: 20/8/2024
+Time: 18:59
+Phone Number: +917357898333
+Message: Hello Python!
+--------------------
+Date: 20/8/2024
+Time: 19:0
+Phone Number: +918209795784
+Message: Hello Python!
+--------------------
+Date: 20/8/2024
+Time: 19:5
+Phone Number: +918209795784
+Message: C://Users//delli//OneDrive//Desktop//cafe.csv
+--------------------
