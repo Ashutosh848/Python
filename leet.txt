@@ -1,0 +1,25 @@
+a = "Bob hit a ball, the hit BALL flew far after it was hit."
+st = ''
+
+for i in a:
+    if (ord(i) >= 65 and ord(i) <= 90) or (ord(i)>=97 and ord(i)<= 122) or i == ' ': 
+        st = st+i.lower()
+st = st.split()
+my_dict = {}
+for j in st:
+    if(j not in my_dict):
+        my_dict[j] = 1
+    else:
+        my_dict[j]+=1
+
+ban = ['hit']
+max = 0
+max_word = ''
+for k,f in my_dict.items():
+    if(f>max and k!=ban[-1]):
+        max = f
+        max_word = k
+print(max_word)
+    
+        
+    
