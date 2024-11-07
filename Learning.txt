@@ -1,0 +1,85 @@
+Data Warehouse:-A data warehouse is a centralised repository that stores large amount of structured or semi structured data in it.
+                Data is achieved from various sources like OLTP(Online Transaction processing),Flat file systems,Traditional ways etc.
+                This data is loaded into data warehouse to perform various analysis in historical data.The data into data warehouse is loaded by
+                ETL or ELT. 
+*NOTE- Once a data is entered into data warehouse then it can'nt deleted.
+
+
+Characterstics:-
+
+i) Subject Oriented = The data in data warehouse is subject oriented.Means the data is organized around specific subjects like customers,sales,other
+   departments as well.
+
+ii)Integrated = It combines data from varous sources like traditional databases,OLTP,flat file systems,centralised systems etc. This data is now transformed
+to load because maintaining the consistency of data is vey important.
+
+iii)Non-Changable = Once data is entered into data warhouse then it does'nt change.Because we have to perform various analysis over the historical data.
+
+iv)Time-varient = Data warehouse stores historical data enabling time based analysis like for trend over month or year, and it is largely used for batch time processing where data is scheduled based on time periods
+
+v)Optimized for real time performance = Data warehouses are structured for read operations which are efficient for complex queries and analysis.
+
+
+Importance :-
+
+i)Centrailized data management
+ii) High performance quering
+iii) Analysis over historical data
+iv) Batch time processing
+v)Better Decision making
+
+
+
+DATABASE VS DATA WAREHOUSE
+
+i) Purpose:-
+.Database = Used for online tranaction processing(OLTP).Stores and manages real time day to day data.Basically Used to driven the business.
+            Used for day to day transactions and operations.
+.Data Warehouse = It is used for online analytical processing(OLAP).It is basically used for analysing trends over time (Basically used for batch processing).Stores in a structured format.
+
+ii)Type of data stored:-
+.Database = Stores data for real time operations(OLTP).
+.Data Warehouse = Stores historical data (OLAP) online analytical processing.
+
+iii)Data Structure:-
+.Database = Stores data in a normalized form.It is easy to understand and reduced redundancy.
+.Data Warehouse = Basically Data stored in it is denormalized because main goal is to understand and analyse raw data.
+
+iv)Optimized For:-
+.Database = Optimized for transactional processing-CRUD Operations The main focus is to fast reads updates for real time processing,delete.
+.Data Warehouse = Optimized for analytical queries and batch Processing things.Optimized for retrieval,complex queries etc.
+
+v)Data processing:-
+.Database = Focuses on handling a large number of small transactions(OLTP).
+.Data Warehouse = Focus on batch processing and analysis for historical data and reporting.(OLAP)
+
+vi).DB=Tools:-MYSQL,POSTGRESQL,SSMS
+   .DATA Warehouse:-Amazon redshift,Google bigquery, snowflake.
+
+
+
+
+
+
+ETL vs ELT:-
+NOTE*- Both of these are used to store or ingest a large amount of data.
+
+i)
+ETL :- Extract => In this type firstoff all we have to extract our data from various sources like traditional database,flat files,centralized format,
+apis, web scrapping etc.
+       
+       Transform => After extraction data is being ready for transformation.Basically data is transformed into suitable format for storage and analysis.
+       transformation includes cleaning,filtering,applying columns,removing unnecessary columns, Joining tables. Making it sure for consistency and quality.
+       
+       Load => AFter transformation data is then loaded into data warehouse used for analytical processing and batch processing.
+
+ii)
+ELT :- Extract => Same as ETL data is firstly extracted same as ETL process.
+
+       Load => After extraction the raw data is then loaded into the warehouse or cloud based systems without performing any transformation.
+
+       Transformation =>After data is loaded into cloud systems or warehouse. Then the transformation part takes place itself.
+                        because of complex computing systems and scalability of modern cloud techs.
+                        After this if the dtaa is still unclean then the sql and python will take place for transformation. 
+
+
